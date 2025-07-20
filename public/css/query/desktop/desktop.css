@@ -1,0 +1,42 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.search-bar {
+  margin: 0 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin: 0 10px;
+}
+
+.swiper.hero-carousel {
+  width: 100%;
+}
+
+.category-grid {
+  width: 80%;
+}
+
+.top_selling {
+  width: 80%;
+}
+
+.section_four {
+  width: 80%;
+}
+
+.section1 {
+  width: 200px;
+}
