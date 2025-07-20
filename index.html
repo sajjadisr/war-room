@@ -1,139 +1,24 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>فروشگاه آنلاین</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./public/css/main.css">
+  <title>cats</title>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <a href="/" class="logo"><img src="./public/img/logo.svg" alt="Online Store Logo"></a>
-      <form class="search-bar">
-        <input type="text" placeholder="جستجو در فروشگاه..." aria-label="Search products">
-        <button type="submit">🔍</button>
-      </form>
-      <nav class="nav-menu">
+    <div class="nav">
+      <nav>
         <ul>
-          <li><a href="#">الکترونیک</a>
-            <ul class="dropdown">
-              <li><a href="#">موبایل</a></li>
-              <li><a href="#">لپ‌تاپ</a></li>
-            </ul>
-          </li>
-          <li><a href="#">مد و پوشاک</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">customers</a></li>
         </ul>
+        <img src="./public/img/istockphoto-1214084790-612x612.jpg" alt="">
       </nav>
-      <div class="user-actions">
-        <a href="#" aria-label="User account">👤</a>
-        <a href="#" aria-label="Shopping cart">🛒</a>
-      </div>
     </div>
   </header>
-
-  <div class="swiper hero-carousel mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://via.placeholder.com/1200x400?text=Hero+Banner+1" alt="Promotional Banner 1"></div>
-      <div class="swiper-slide"><img src="https://via.placeholder.com/1200x400?text=Hero+Banner+2" alt="Promotional Banner 2"></div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div class="category-grid">
-    <div class="category-item">
-      <svg style="width: 18px; height: 18px; fill: var(--color-icon-high-emphasis); --darkreader-inline-fill: var(--darkreader-text--color-icon-high-emphasis, var(--darkreader-text-000000, #e8e6e3));" data-darkreader-inline-fill=""><use xlink:href="#mobile"></use></svg>
-      <span>موبایل</span>
-    </div>
-    <div class="category-item">
-      <img src="https://via.placeholder.com/60x60?text=Fashion" alt="Fashion">
-      <span>مد و پوشاک</span>
-    </div>
-  </div>
-
-  <div class="ad">
-    <a href="#">
-      <img class="ad_img" src="https://via.placeholder.com/1200x200?text=Ad+Banner" alt="Promotional banner">
-      <div class="ad-text">تا 50٪ تخفیف در جشنواره پاییزی!</div>
-    </a>
-  </div>
-
-  <main>
-    <div class="top_selling">
-      <h2>محصولات پرفروش</h2>
-      <div class="swiper-red mySwiperRed">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://via.placeholder.com/200x150?text=Samsung+Phone" alt="Product 1">
-            <div class="product-info">
-              <h3>گوشی موبایل سامسونگ</h3>
-              <p>۱۲,۰۰۰,۰۰۰ تومان</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="https://via.placeholder.com/200x150?text=Lenovo+Laptop" alt="Product 2">
-            <div class="product-info">
-              <h3>لپ‌تاپ لنوو</h3>
-              <p>۱۵,۰۰۰,۰۰۰ تومان</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-    <div class="section_four">
-      <div class="section1">
-        <img src="https://via.placeholder.com/200x100?text=Offer+1" alt="Special Offer 1">
-        <p>تخفیف ویژه گوشی‌ها</p>
-      </div>
-      <div class="section1">
-        <img src="https://via.placeholder.com/200x100?text=Offer+2" alt="Special Offer 2">
-        <p>لوازم خانگی با قیمت ویژه</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <a href="#">درباره ما</a>
-        <a href="#">تماس با ما</a>
-        <a href="#">شرایط و قوانین</a>
-      </div>
-      <div class="social-media">
-        <a href="#" aria-label="Instagram">📷</a>
-        <a href="#" aria-label="Twitter">🐦</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      pagination: { el: ".swiper-pagination", clickable: true },
-      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-      breakpoints: { 768: { slidesPerView: 1 } },
-    });
-
-    var swiperRed = new Swiper(".mySwiperRed", {
-      slidesPerView: 4,
-      spaceBetween: 15,
-      pagination: { el: ".swiper-pagination", clickable: true },
-      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-      breakpoints: {
-        320: { slidesPerView: 1, spaceBetween: 10 },
-        768: { slidesPerView: 2, spaceBetween: 15 },
-        1024: { slidesPerView: 4, spaceBetween: 15 },
-      },
-    });
-  </script>
+  <main></main>
 </body>
 </html>
