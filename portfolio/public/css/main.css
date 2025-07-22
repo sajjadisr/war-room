@@ -1,0 +1,3 @@
+@import url('./general.css');
+@import url('./query/desktop/desktop.css') screen and (min-width: 769px);
+@import url('./query/mobile/mobile.css') screen and (max-width: 768px);
