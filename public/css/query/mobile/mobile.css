@@ -1,0 +1,22 @@
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 5px;
+  }
+  
+  header .search input {
+    width: 70%;
+  }
+  
+  main .par {
+    flex: 1 1 100%;
+  }
+  
+  .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
